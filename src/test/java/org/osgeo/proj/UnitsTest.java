@@ -41,7 +41,7 @@ import static org.junit.Assert.*;
  * @version 1.0
  * @since   1.0
  */
-public final strictfp class UnitsTest {
+public final class UnitsTest {
     /**
      * Verifies the {@link Units} constants that are system units.
      */

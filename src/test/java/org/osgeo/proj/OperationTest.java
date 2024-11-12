@@ -40,7 +40,7 @@ import static org.junit.Assume.*;
  * @version 1.0
  * @since   1.0
  */
-public final strictfp class OperationTest extends TransformTestCase {
+public final class OperationTest extends TransformTestCase {
     /**
      * The factory to test.
      */

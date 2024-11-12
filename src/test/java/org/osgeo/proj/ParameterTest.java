@@ -46,7 +46,7 @@ import static org.junit.Assert.*;
  * @version 1.0
  * @since   1.0
  */
-public final strictfp class ParameterTest {
+public final class ParameterTest {
     /**
      * Asserts that the given string starts with the given prefix.
      *
@@ -99,14 +99,14 @@ public final strictfp class ParameterTest {
         final List<GeneralParameterDescriptor> descriptors = descriptorGroup.descriptors();
         assertStartsWith("Mercator", method.getName().getCode());
         assertFalse(descriptors.isEmpty());
-        assertLatitude((ParameterDescriptor) descriptors.get(0));
+        assertLatitude((ParameterDescriptor<?>) descriptors.get(0));
         /*
          * Verify the parameter values.
          */
         final ParameterValueGroup valueGroup = operation.getParameterValues();
         final List<GeneralParameterValue> parameters = valueGroup.values();
         assertEquals(descriptors.size(), parameters.size());
-        final ParameterValue<?> first = (ParameterValue) parameters.get(0);
+        final ParameterValue<?> first = (ParameterValue<?>) parameters.get(0);
         assertEquals(Double.class, first.getDescriptor().getValueClass());
         assertEquals(0, first.doubleValue(), 0);
         assertSame(Units.DEGREE, first.getUnit());

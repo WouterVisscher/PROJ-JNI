@@ -42,7 +42,7 @@ import static org.junit.Assert.*;
  * @version 2.0
  * @since   1.0
  */
-public final strictfp class ReferencingFormatTest {
+public final class ReferencingFormatTest {
     /**
      * The prefix used in {@code ReferencingFormat.h} for lines defining constant values.
      */

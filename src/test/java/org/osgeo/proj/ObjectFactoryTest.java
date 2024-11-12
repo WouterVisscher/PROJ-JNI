@@ -59,7 +59,7 @@ import static java.util.Collections.singletonMap;
  * @version 1.0
  * @since   1.0
  */
-public final strictfp class ObjectFactoryTest {
+public final class ObjectFactoryTest {
     /**
      * Tolerance threshold for floating point number comparisons in this class.
      */

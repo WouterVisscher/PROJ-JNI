@@ -37,7 +37,7 @@ import static org.junit.Assert.*;
  * @version 1.0
  * @since   1.0
  */
-public final strictfp class ProjTest {
+public final class ProjTest {
     /**
      * Tests {@link Proj#version()}. This tests verifies that the release string
      * contains 3 numbers of the form x.y.z. This number is followed by the date,

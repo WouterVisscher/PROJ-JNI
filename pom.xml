@@ -110,7 +110,7 @@
             <configuration>
               <rules>
                 <requireJavaVersion>
-                  <version>11</version>
+                  <version>22</version>
                 </requireJavaVersion>
                 <dependencyConvergence/>
               </rules>
@@ -128,7 +128,7 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.11.0</version>
         <configuration>
-          <release>11</release>
+          <release>22</release>
           <showWarnings>true</showWarnings>
           <showDeprecation>true</showDeprecation>
           <useIncrementalCompilation>false</useIncrementalCompilation>

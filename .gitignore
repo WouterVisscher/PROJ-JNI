@@ -1,5 +1,7 @@
 # Maven compilation output
 /target/
+/build
+/.vscode
 
 # Log file
 *.log
