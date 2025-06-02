@@ -99,7 +99,7 @@
   <build>
     <plugins>
 
-      <!-- Require Java 11 for compilation. -->
+      <!-- Require Java 22 for compilation. -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-enforcer-plugin</artifactId>
@@ -110,7 +110,7 @@
             <configuration>
               <rules>
                 <requireJavaVersion>
-                  <version>11</version>
+                  <version>22</version>
                 </requireJavaVersion>
                 <dependencyConvergence/>
               </rules>
@@ -122,13 +122,13 @@
         </executions>
       </plugin>
 
-      <!-- Compilation: target Java 11, enable all warnings. -->
+      <!-- Compilation: target Java 22, enable all warnings. -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.13.0</version>
         <configuration>
-          <release>11</release>
+          <release>22</release>
           <showWarnings>true</showWarnings>
           <showDeprecation>true</showDeprecation>
           <useIncrementalCompilation>false</useIncrementalCompilation>
